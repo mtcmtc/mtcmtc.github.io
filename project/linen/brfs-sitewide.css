@@ -1,0 +1,241 @@
+<style type="text/css">
+
+/*** Responsive EDFS background fix - commented out 012916 - resintated 021216 ***/
+.edfs.en_US { background-image: none; }
+
+/*** Chrome map area outline fix ***/
+area { outline:none }
+
+/*** jBox CSS ***/
+#jbox { overflow:auto; }
+#jbox #backdrop { width:100%; height:100%; left:0; background:#000; overflow:auto; opacity:0.75; filter:alpha(opacity = 75); z-index:999; position:fixed; _position:absolute; top:0; _top:expression(eval(document.body.scrollTop)); }
+#jbox #box { background:transparent; left:50%; z-index:1000; position:fixed; _position:absolute; top:50%; box-shadow:4px 4px 25px rgba(0, 0, 0, .5); -moz-box-shadow:4px 4px 25px rgba(0,0,0,.5); -webkit-box-shadow:4px 4px 25px rgba(0, 0, 0, .5); border:1px solid #333; }
+#jbox #topbar { position:absolute; top:-25px; width:100%; }
+#jbox #title { position:absolute; left:0; font-family:Arial, Helvetica, Sans-serif; font-size:14px; color:#fff; }
+#jbox #close { position:absolute; right:0; }
+#jbox #close a { display:block; color:#fff; text-decoration:none; font-family:Arial, Helvetica, Sans-serif; font-size:14px; }
+#jbox #close a:hover { text-decoration:underline; }
+#jbox #iframeContainer, #jbox #iframeContainer #iframe { margin:0; padding:0; background:#fff; overflow:hidden; }
+#jbox #loading { position:absolute; color:#000; top:15px; left:15px; font-family:Arial, Helvetica, sans-serif; font-size:14px; }
+#jbox #loading img { margin-right:10px; }
+
+/** Brand CSS **/
+/* Setting up Base Font size */
+.wcd_onesite{
+	font-size: 16px;
+	/*line-height: 16px;*/
+}
+
+/* Keeps iOS from changing font sizes - Onesite */
+body{
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Onesite: center maincontent; */
+#bodyContainer #mainContent{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1400px;
+}
+/* Onesite: fix #productBagError width for phones */
+#productBagError { width:auto; max-width:400px; }
+
+/** Brand-specific CSS **/
+/** FONT STYLES BROL [ns] added futura, didot, and georgia 04.2017 **/
+.brol_didot {font-family: DidotLTPro-Bold, garamond, 'times new roman', serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: 400;}
+.brol_futura {font-family: futura-pt,Futura,"Hiragino Kaku Gothic Pro",sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.brol_georgia { font-family: Georgia, Garamond, 'times new roman', serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale; font-weight: 100;}
+
+/* Global CSS overrides */
+body {background:#fff !important;}
+form {display:inline; margin:0; padding:0;}
+ul{list-style:none outside none; margin:0; padding:0;}
+#bodyContainer {background-color:transparent; /*padding:25px 0px 0px 0px;*/}
+.cssHide {height:1px;overflow:hidden;position:absolute;top:-100em;width:1px;}
+
+/* Topnav overrides */
+.siteErrorSpacer { background-color:transparent !important; }
+#universalBar { background-color:white !important; }
+.universalBarTable { background-color:transparent !important; }
+.universalBarTable #universalBarTabs  { background-color:transparent !important; }
+.universalBarTable #universalBarTabs li  { background-color:transparent !important; }
+.universalBarTable .universalBarCenter5Tab, .universalBarContainer5Tab { background-color:transparent !important; }
+#topNav { background-color:transparent !important; }
+#topNav #universalTopNav .division {height:28px; float:left; margin:0; padding:0; white-space:nowrap;}
+#topNav #universalTopNav #topSearchGoButton{margin:2px 0 0 2px; float:right;}
+#topNav #topSearch #topSearchInputs{height:18px;}
+#topNav #universalTopNav #topSearchSelect {margin:0; width:133px;}
+#topNav #topSearch #topSearchSelect {color:#333333; float:left; font-size:10px; height:18px;}
+
+/* SideNav and Facet overrides */
+#sideNav {min-height: 500px !important;font-size:11px !important; background-image:url("/Asset_Archive/BFWeb/content/0010/762/014/assets/LN_transparency.png")!important;background-color:transparent !important;}
+#sideNav li.categorySelected { background-color: transparent; line-height: 16px; margin-left: 0; margin-top: 11px; padding-left: 0; }
+#sideNav li.firstHeader {color:#333333; padding:16px 0 5px 0;font-size:11px !important;}
+#sideNav li.header { color: #333333; padding: 30px 0 0px 0; font-size: 11px !important; line-height: 20px; }
+#sideNav #sideNavCategories {background-color: transparent !important;padding: 0 0 0 0;text-align:left;}
+#sideNav ul.category {padding: 0px 13px 30px 0px;}
+#sideNav ul.subCategory {background-image:none !important;background:none transparent !important;background-color: none !important; margin: 0 0 0 -70px;}
+#sideNav li.category { line-height: 16px;margin-left:0;margin-top:11px;}
+#sideNav #sideNavCategories a.subCategory:hover {color:#a07314;font-weight:bold;}
+#sideNav #sideNavCategories a.category:hover {color:#a07314;}
+#sideNav li.subCategorySelected {background-image:none !important;background:none transparent !important;background-color: transparent !important; color:#a07314; font-weight:bold;}
+#sideNav a.category:link, #sideNav a.category:visited, #sideNav a.category:active {color:#333333;}
+#sideNav a.subCategory:link, #sideNav a.subCategory:visited, #sideNav a.subCategory:active  {color:#a07314;}
+#sideNav a.categorySelected:link, #sideNav a.categorySelected:visited, #sideNav a.categorySelected:active, #sideNav a.categorySelected:hover { font-weight: bold; color: #999; line-height: 14px; }
+#sideNav a.subCategorySelected:link, #sideNav a.subCategorySelected:visited, #sideNav a.subCategorySelected:active, #sideNav a.subCategorySelected:hover {color:#999;}
+
+/* Facet styles */
+#sideNav .facets-container { color:#333; }
+#sideNavFacets { background:transparent !important; width:147px; background-color:none; }
+#sideNavFacets div.facet { border-bottom:1px solid #999; }
+#sideNavFacets div.facet .facetName { font-size:11px !important; padding:8px 0 16px 5px; }
+#sideNavFacetsHeader { background-color:transparent !important; border-bottom:1px solid #999; width:147px; }
+#sideNavFacetsHeader .categoryNameDiv { font-size:11px !important; }
+#sideNavFacetsHeader .categoryItemCountResetDiv { padding-bottom:20px; padding-top:16px; }
+#sideNavFacetsHeader.facet div.facet { border-bottom:1px solid #999 !important; }
+#facet_color { display: none; }
+div.facet .sprite-button { background-image: url("/Asset_Archive/BRWeb/content/0010/042/891/assets/facet_sprite_gol.png"); }
+div.price_slider div.slider {margin-left: 4px;}
+
+/* Main Content and Category page overrides */
+#mainContentContainer{ background-image:none !important;background:none transparent !important;background-color: transparent !important;border-left:0px; padding-left:0px !important;}
+#tabTableOff {margin-top:0px;}
+/*added to center table for VI pages*/
+#tabTable, #tabTableOff {background-color:#ffffff; border:medium none; margin:0 0 0 3px; padding:0; width:825px;}
+/*add spacing at top of VI pages*/
+.categoryPaging {padding-top:12px;}
+.categoryPaging a:link,
+.categoryPaging a:visited,
+.categoryPaging a:hover,
+.categoryPaging a:active
+{ color: #333333; /*text-decoration: underline;*/ }
+
+/* css override add 1px grey outline to VI images */
+.brand2 .imgDiv {background-color:#ffffff; border:1px solid #F0F0F0; margin:0 1px 3px 0 !important; padding:0; position:relative;}
+
+/* Footer overrides */
+#footer {background-color:transparent !important;color:#333333;}
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {color:#333333;}
+.footerSeperator {display:none !important;}
+
+/* override sub sub categories */
+#sideNav a.subSubCategory:link, #sideNav a.subSubCategory:visited, #sideNav a.subSubCategory:active, #sideNav a.subSubCategory:hover { color:#a07314 }
+#sideNav a.subSubCategorySelected:link, #sideNav a.subSubCategorySelected:visited, #sideNav a.subSubCategorySelected:active, #sideNav a.subSubCategorySelected:hover { color:#a07314; margin:0; padding:0; font-weight:bold;}
+#sideNav ul.subSubCategory {background-image:none !important;background:none transparent !important;background-color: transparent !important; list-style:none outside none; margin:0; padding:0;font-weight:normal;}/*set background color and set weight to normal*/
+#sideNav li.subSubCategorySelected {line-height:11px; margin:0; padding:0 0 0 10px;} /*took out bottom padding 3px*/
+
+#categoryNameHeader {background-color:#a07314; font-family:Arial,Verdana,Sans-serif; font-size:18px; font-weight:normal; line-height:66px;text-transform: uppercase;width:820px;}
+/*product marketing flag change color*/
+.productMarketingFlag {color:#333333; font-size:10px; line-height:13px;}
+/* sub cat header change color, font family and size*/
+.header4 {font-color:#74473d; font-family:Arial,Verdana,Sans-serif; font-size:14px;}
+
+/* Fix for international shipping selector on CS pages */
+#internationalShippingOptInList p.copyright { margin:0; padding:0 }
+#internationalShippingOptInList .please_select { margin:0 0 10px; padding:0; line-height:10px; font-size:11px }
+#internationalShippingOptInList #explanatoryCopy { margin:12px 0 14px 10px; padding:0 }
+
+/* CSS BUG OVERRIDES */
+/*contentOverride54 QuickLook Close button in UniversalSprite*/
+.brand2 #quickLookClose, .brand8 #quickLookClose, .brand21 #quickLookClose { width: 19px; margin-top:2px;}
+/*contentOverride55 internationalShippingOptInList div hide*/
+#internationalShippingOptInList div.top {	display:none; }
+
+/* top search fix 6/28/11 */
+#topSearch {display:block;}
+
+/* legal popup title edit */
+.shortDescMsg { line-height: 18px; }
+
+/*Begin - summer 2012: HTML & Marketing Banners layout CONTAINER 4*/
+* html #categoryProductGrid .brand1 productCatItem { height:357px }
+*:first-child+html #categoryProductGrid .brand1 productCatItem { height:357px }
+#categoryProductGrid .clear5 { display:none;height:0; }
+#tabTableOff .header4 {clear:both;}
+#vi_banner_ID10000383 {display: none;}
+#categoryNameHeader {display: none;}
+
+#newContentBanner { display: inline; _display: inline; float:left; margin:9px 2px 90px 1px !important; *margin-top:1px; *margin-bottom:20px; *margin-right:2px; height:272px; overflow:hidden; padding:0px !important; _padding:0px !important; /*min-width:202px; border: 1px solid red; */ }
+.subHeaderWCDMarketing{ display: inline; _display: inline; float:left; margin:8px 2px 50px 1px !important; *margin-top:1px; *margin-bottom:20px; *margin-right:2px; height:269px; overflow:hidden; padding:0px !important; _padding:0px !important; min-width:411px; }
+*html #newContentBanner { display:inline; }
+#htmlBannerBROL { display: block; position: relative; /* background-image:url("/Asset_Archive/BFWeb/content/0010/762/014/assets/0213_HTMLVIBanner.png")!important; background-color:transparent !important; margin:7px 2px 50px 0px !important; *margin-top:1px; *margin-bottom:20px; *margin-right:2px; */ background-color:black !important; width: 830px; height:60px; margin: 0 0 15px 0; line-height:20px; overflow:hidden; padding:0px !important; _padding:0px !important; float:left;
+}
+
+@font-face { font-family: MinervaModernRegular; src: url('/Asset_Archive/BFWeb/content/0010/762/014/assets/MINERVAMODERNRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ 	url('/Asset_Archive/BFWeb/content/0010/762/014/assets/MINERVAMODERNRegular.woff') format('woff'), /* Chrome, Firefox, Safari, IE9+, */ 	url('/Asset_Archive/BFWeb/content/0010/762/014/assets/MINERVAMODERNRegular.ttf') format('ttf'); /* Android, iOS, Older Safari */ font-weight: normal; font-style: normal;	}
+
+#catname, #subcatname, #subsubcatname { font-family: MinervaModernRegular; color:white; font-size:27px; font-weight:normal; text-transform: uppercase; /*letter-spacing:1.5px; */ position: absolute !important; top: 25% !important; margin:2px 15px 0 15px !important; width: 790px !important; line-height: 25px; }
+
+/* for marketing flag */
+.productMarketingFlag{font-weight:bold !important; }
+
+/* SHOP BY SIZE BANNER FORM COLORATION
+
+"Shop by Size" and "See our Size Chart" text color: #333333
+"Find" button color: #333333
+"Reset" button: #999999
+
+Subcat text color (what's showing as "Blazers" and "Tops" in the img attached): #6c6c6b
+"Select Size" text within the field: #333333
+Arrow color: a7a397
+
+Background color: #F2EEE3
+*/
+
+#shopBySizeContainer { background-color: #F2EEE3 !important; padding: 20px 0 20px 20px; width: 810px; }
+#shopBySizeTools { background: url("/Asset_Archive/BFWeb/content/0010/762/014/assets/0213_ShopBySize_title.png") no-repeat scroll 0 0 transparent; }
+#shopBySizeTools li a:link,
+#shopBySizeTools li a:visited,
+#shopBySizeTools li a:active { color:#333; }
+
+#shopBySizeSelections li.sizeFinderDropdowns label { color: #6c6c6b; font-weight: normal; font-size: 8px; }
+#shopBySizeSelections li.sizeFinderDropdowns select { background: none repeat scroll 0 0 #F2EEE3; font-weight: normal; color: #333; }
+#shopBySizeSelections li.sizeFinderFind { float: left; margin: 20px 0 0 5px; }
+#shopBySizeSelections li.sizeFinderReset { float: left; margin: 20px 0 0 3px; }
+
+/* begin fix for wp free returns */
+.brand2 #productMailOnlyReturn .sprite,.brand2 #productMailOnlyReturn .freereturn  { background-color: none; background-position:0 -490px !important; background-image: url("/Asset_Archive/BRWeb/content/0009/887/411/assets/quicklook-sprites_US_BROL_03252011.gif") !important; background-repeat: no-repeat !important; width: 200px; }
+.brand2 #productMailOnlyReturn { padding:0px; }
+.mailOnlyFlag {	/* background-position:0 -517px !important; background-image: url("/Asset_Archive/BRWeb/content/0009/887/411/assets/quicklook-sprites_US_BROL_03252011.gif") !important; background-repeat: no-repeat !important; width:200px; */ }
+.mailOnlyFlagText{ display:none; }
+/* o, -517px for 2nd*/
+/* end fix for wp free returns */
+
+/* HIDE PRODUCT TAG */
+#quickLookProductDescription {display:none;}
+
+/* Responsive Checkout styles */
+.promoDetail {width:85%;}
+dl.promoContent {overflow: hidden;color: #999;}
+.promoItem >  dd:nth-of-type(1){ width:34%;}
+.promoItem > dd:nth-of-type(2){  width:63%;}
+html.breakpoint-mobile #shoppingBagDetail.collapsed dl.promoItem {display:none;}
+
+
+/* change z-index for MUP on shopping bag to layer over VV Banner */
+#inlineBagMarketingClip { z-index:65 !important }
+
+/** took out the brand-bar override to localized the proper fix for the checkout header overlap **/
+body.orderPage .brand-bar--right {
+	top: 0;
+	margin-top: 0;
+}
+
+/** fix for BRFS Product Pages showing extra text for Mail Only Returns - jimkwak 10-15-2015 **/
+#productMailOnlyReturn {width:200px !important; height:18px !important;}
+
+/** A/B Test Category Nav - Hide code for 3/8/16 **/
+.l--page-navigation{display:none !important;}
+
+/* Product page social icon links */
+.social-links {
+	text-align: left;
+}
+.social-links #pinItDiv {
+	margin-left: 105px;
+}
+
+.mkt_fixed{position:fixed}.mkt_top--0{top:0}.mkt_bottom--0{bottom:0}.mkt_left--0{left:0}.mkt_right--0{right:0}.mkt_content--under{width:100%;-webkit-transform:none;transform:none}.mkt_content--over{width:auto;position:absolute}@media (max-width:767px){.mkt_content--over-at-lg{position:static;-webkit-transform:none;transform:none}}.mkt_absolute--top-left{left:0;top:0}.mkt_absolute--top-center{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.mkt_absolute--top-right{top:0;right:0}.mkt_absolute--center-left{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.mkt_absolute--center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.mkt_absolute--bottom-left{left:0;bottom:0}.mkt_absolute--bottom-center{left:50%;bottom:0;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.mkt_absolute--bottom-right{right:0;bottom:0}@media only screen and (min-width:768px){.mkt_absolute--at-lg{position:absolute}.mkt_absolute-centered--at-lg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}.mkt_absolute-centered--horizontal-at-lg{position:absolute;left:50%;transform:translate(-50%,0);-webkit-transform:translate(-50%,0);-moz-transform:translate(-50%,0);-ms-transform:translate(-50%,0)}.mkt_absolute-centered--vertical-at-lg{position:absolute;top:50%;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-ms-transform:translate(0,-50%)}.mkt_pd--horizontal-at-lg{padding-left:1rem;padding-right:1rem}.mkt_pd--left-at-lg{padding-left:1rem}.mkt_pd--right-at-lg{padding-right:1rem}.mkt_pd--horizontal-sm-at-lg{padding-left:.5rem;padding-right:.5rem}.mkt_pd--left-sm-at-lg{padding-left:.5rem}.mkt_pd--right-sm-at-lg{padding-right:.5rem}.mkt_pd--horizontal-lg-at-lg{padding-left:1.5rem;padding-right:1.5rem}.mkt_pd--left-lg-at-lg{padding-left:1.5rem}.mkt_pd--right-lg-at-lg{padding-right:1.5rem}.mkt_pd--horizontal-xl-at-lg{padding-left:2rem;padding-right:2rem}.mkt_pd--left-xl-at-lg{padding-left:2rem}.mkt_pd--right-xl-at-lg{padding-right:2rem}}.mkt_layer{position:absolute;top:0;left:0}.mkt_sp_horizontal_auto{margin-left:auto;margin-right:auto}.mkt_z--2{z-index:2}.mkt_z--neg{z-index:-50}.mkt_font-size--0-5vw-at-lg,.mkt_font-size--1-5vw-at-lg,.mkt_font-size--12-at-lg,.mkt_font-size--14-at-lg,.mkt_font-size--16-at-lg,.mkt_font-size--18-at-lg,.mkt_font-size--1vw-at-lg,.mkt_font-size--20-at-lg,.mkt_font-size--24-at-lg,.mkt_font-size--28-at-lg,.mkt_font-size--2vw-at-lg,.mkt_font-size--32-at-lg,.mkt_font-size--36-at-lg,.mkt_font-size--3vw-at-lg,.mkt_font-size--42-at-lg,.mkt_font-size--48-at-lg,.mkt_font-size--4vw-at-lg{font-size:auto}@media (min-width:768px){.mkt_content--over-at-lg{position:absolute;width:auto}.mkt_font-size--12-at-lg{font-size:.75rem}.mkt_font-size--14-at-lg{font-size:.875rem}.mkt_font-size--16-at-lg{font-size:1rem}.mkt_font-size--18-at-lg{font-size:1.125rem}.mkt_font-size--20-at-lg{font-size:1.25rem}.mkt_font-size--24-at-lg{font-size:1.5rem}.mkt_font-size--28-at-lg{font-size:1.75rem}.mkt_font-size--32-at-lg{font-size:2rem}.mkt_font-size--36-at-lg{font-size:2.25rem}.mkt_font-size--42-at-lg{font-size:2.625rem}.mkt_font-size--48-at-lg{font-size:3rem}.mkt_font-size--56-at-lg{font-size:3.5rem}.mkt_font-size--64-at-lg{font-size:4rem}.mkt_font-size--74-at-lg{font-size:4.625rem}.mkt_font-size--0-5vw-at-lg{font-size:.5vw}.mkt_font-size--1vw-at-lg{font-size:1vw}.mkt_font-size--1-5vw-at-lg{font-size:1.5vw}.mkt_font-size--2vw-at-lg{font-size:2vw}.mkt_font-size--3vw-at-lg{font-size:3vw}.mkt_font-size--4vw-at-lg{font-size:4vw}}.mkt_font-size--12-at-xl,.mkt_font-size--14-at-xl,.mkt_font-size--16-at-xl,.mkt_font-size--18-at-xl,.mkt_font-size--20-at-xl,.mkt_font-size--24-at-xl,.mkt_font-size--28-at-xl,.mkt_font-size--32-at-xl,.mkt_font-size--36-at-xl,.mkt_font-size--42-at-xl,.mkt_font-size--48-at-xl,.mkt_font-size--56-at-xl{font-size:auto}@media (min-width:1024px){.mkt_font-size--12-at-xl{font-size:.75rem}.mkt_font-size--14-at-xl{font-size:.875rem}.mkt_font-size--16-at-xl{font-size:1rem}.mkt_font-size--18-at-xl{font-size:1.125rem}.mkt_font-size--20-at-xl{font-size:1.25rem}.mkt_font-size--24-at-xl{font-size:1.5rem}.mkt_font-size--28-at-xl{font-size:1.75rem}.mkt_font-size--32-at-xl{font-size:2rem}.mkt_font-size--36-at-xl{font-size:2.25rem}.mkt_font-size--42-at-xl{font-size:2.625rem}.mkt_font-size--48-at-xl{font-size:3rem}.mkt_font-size--56-at-xl{font-size:3.5rem}.mkt_font-size--64-at-xl{font-size:4rem}.mkt_font-size--74-at-xl{font-size:4.625rem}}@media only screen and (min-width:768px){.mkt_txt--left-at-lg{text-align:left}.mkt_txt--center-at-lg{text-align:center}.mkt_txt--right-at-lg{text-align:right}}.mkt_content-wrapper{max-width:1400px;margin:0 auto}.mkt_content-wrapper *{box-sizing:border-box}.mkt_content-wrapper picture{display:block;width:100%;font-size:0}.mkt_content-wrapper img{width:100%}
+
+.mkt_sp_20,.mkt_sp_20-scale-at-lg{margin-bottom:20px}.mkt_valign--top{vertical-align:top}.mkt_btn--full-width-at-md{display:inline-block}@media only screen and (max-width:767px){.mkt_btn--full-width-at-md{display:block;width:100%}}.mkt_sp_30-scale-at-lg{margin-bottom:30px}@media only screen and (min-width:768px){.mkt_sp_20-scale-at-lg{margin-bottom:1vw}.mkt_sp_30-scale-at-lg{margin-bottom:1.75vw}}.mkt_sp-at-md{margin-bottom:1rem}.mkt_sp_left-at-lg{margin-left:0}.mkt_flex-column{display:flex;flex-direction:column}.mkt_pd_1vw-at-lg{padding:0}@media (min-width:768px){.mkt_sp-at-md{margin-bottom:0}.mkt_sp_left-at-lg{margin-left:1rem}.mkt_flex_order_0-at-lg{order:0}.mkt_flex_order_1-at-lg{order:1}.mkt_pd_1vw-at-lg{padding:1vw}}.mkt_divider{width:100%;height:1px}.mkt_sp_5-5vw-at-lg{margin:0}.mkt_pd_1-75vw-at-lg{padding-left:0;padding-right:0}.mkt_pd_left_0-75vw{padding-left:.75vw}.mkt_pd_left_1-5vw{padding-left:1.5vw}.mkt_pd_left_2-25vw{padding-left:2.25vw}.mkt_pd_right_0-75vw{padding-right:.75vw}.mkt_pd_right_1-5vw{padding-right:1.5vw}.mkt_pd_right_2-25vw{padding-right:2.25vw}.mkt_sp_bottom_2vw{margin-bottom:2vw}.mkt_sp_bottom_3-5vw{margin-bottom:3.5vw}@media (max-width:767px){.mkt_sp_bottom_0-at-md{margin-bottom:0}.mkt_pd_bottom_0-at-md{padding-bottom:0}}@media (min-width:768px){.mkt_sp_5-5vw-at-lg{margin:5.5vw}.mkt_sp_bottom_0-at-lg{margin-bottom:0}.mkt_sp_top_0-at-lg{margin-top:0}.mkt_pd_top_0-at-lg{padding-top:0}.mkt_pd_bottom_0-at-lg{padding-bottom:0}.mkt_pd_1-75vw-at-lg{padding-left:1.75vw;padding-right:1.75vw}.mkt_pd_left_0-75vw-at-lg{padding-left:.75vw}.mkt_pd_left_1vw-at-lg{padding-left:1vw}.mkt_pd_left_1-25vw-at-lg{padding-left:1.25vw}.mkt_pd_left_1-5vw-at-lg{padding-left:1.5vw}.mkt_pd_left_1-75vw-at-lg{padding-left:1.75vw}.mkt_pd_left_2vw-at-lg{padding-left:2vw}.mkt_pd_left_2-25vw-at-lg{padding-left:2.25vw}.mkt_pd_left_3vw-at-lg{padding-left:3vw}.mkt_pd_left_3-5vw-at-lg{padding-left:3.5vw}.mkt_pd_right_0-75vw-at-lg{padding-right:.75vw}.mkt_pd_right_1vw-at-lg{padding-right:1vw}.mkt_pd_right_1-25vw-at-lg{padding-right:1.25vw}.mkt_pd_right_1-5vw-at-lg{padding-right:1.5vw}.mkt_pd_right_1-75vw-at-lg{padding-right:1.75vw}.mkt_pd_right_2vw-at-lg{padding-right:2vw}.mkt_pd_right_2-25vw-at-lg{padding-right:2.25vw}.mkt_pd_right_3vw-at-lg{padding-right:3vw}.mkt_pd_right_3-5vw-at-lg{padding-right:3.5vw}}.mkt_link-list--horizontal--bg{padding-top:5%}.mkt_link-list--horizontal{width:85%;margin-top:7px;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}.mkt_link-list--horizontal:after{display:inline-block;width:100%;content:''}.mkt_link-list--horizontal a{display:inline-block;position:relative;text-align:center;width:auto;z-index:2}.mkt_link-list--horizontal a.mkt_link-list--overlay{position:static}.mkt_link-list--horizontal a.mkt_link-list--overlay span{position:absolute;width:100%;height:100%;top:0;left:0;z-index:1}.mkt_tx_justify{text-align:justify;}
+
+</style>

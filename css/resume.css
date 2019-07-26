@@ -190,3 +190,83 @@ a {
 a:hover, a:focus, a:active {
   color: #415e49;
 }
+
+.item-preview-img {
+  position: relative;
+}
+
+.linen-ebb:hover .item-preview-overlay {
+  opacity: 1;
+}
+
+.item-preview-overlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.item-preview-overlay:hover, .item-preview-overlay:focus, .item-preview-overlay:active {
+  opacity: 1;
+  color: transparent;
+}
+
+.item-preview-overlay:hover .btn-preview:after, .item-preview-overlay:focus .btn-preview:after, .item-preview-overlay:active .btn-preview:after {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 100%;
+}
+
+.item-preview-overlay p, .item-preview-overlay .dev-icons {
+  color: #fff;
+}
+
+.item-preview-overlay p {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.item-preview-overlay .dev-icons {
+  line-height: 1;
+}
+
+.item-preview-overlay .dev-icons .list-inline-item i {
+  color: #fff;
+}
+
+.item-preview-overlay .dev-icons .list-inline-item a:hover .fa-github::before {
+  color: #e83e8c;
+}
+
+.item-preview-overlay .btn-preview {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.item-preview-overlay .btn-preview:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 25%;
+  top: 62%;
+  left: 0;
+  right: 0;
+  background-color: #ffc107;
+  z-index: -1;
+}
