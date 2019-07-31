@@ -25,6 +25,10 @@
     target: '#sideNav'
   });
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
   /** Begin Sprite JS **/
 
   var wcdAnimControl = function(sel){
