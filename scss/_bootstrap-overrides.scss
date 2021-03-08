@@ -14,3 +14,52 @@ a {
     color: darken($primary, 15%);
   }
 }
+
+.btn-info {
+	background-color: $yellow;
+	border-color: $yellow;
+	color: $dark;
+
+	&:hover,
+	&:active {
+		background-color: darken($yellow, 15%);
+		border-color: darken($yellow, 15%);
+		color: $dark;
+	};
+}
+
+.navbar-dark {
+	.navbar-nav {
+		.show > .nav-link, .active > .nav-link{
+			color: $white;
+		}
+		.nav-link {
+		  color: $white;
+		  &:hover, &:focus{
+		  	color: darken($yellow, 10%);
+		  }
+		  &.show, &.active{
+		  	color: $yellow;
+		  }
+		}
+
+		&.disabled{
+			color: rgba(255, 255, 255, 0.50);
+		}
+	}
+
+	.navbar-text {
+		color: rgba(255, 255, 255, 0.5);
+
+		a{
+			color: #fff;
+			&:hover, &:focus{
+				color: #fff;
+			}
+		}
+	}
+	.navbar-toggler{
+		color: rgba(255, 255, 255, 0.5);
+	  border-color: rgba(255, 255, 255, 0.1);
+	}
+}

@@ -59,6 +59,7 @@
 
     this.loadSprite = function(data, callback) {
       data.img = new Image();
+      data.img.alt = "sprite animation";
       data.img.onload = callback;
       data.img.src = data.filepath;
     }
