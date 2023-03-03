@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
   color: #495057;
 }
@@ -16,14 +16,13 @@ body {
     padding-left: 17rem;
   }
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -50,7 +49,7 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
 
@@ -66,11 +65,9 @@ p.lead {
   line-height: 3.5rem;
   margin-right: 1rem;
 }
-
 .social-icons a:last-child {
   margin-right: 0;
 }
-
 .social-icons a:hover {
   background-color: #52755c;
 }
@@ -78,7 +75,6 @@ p.lead {
 .dev-icons {
   font-size: 3rem;
 }
-
 .dev-icons .list-inline-item i:hover {
   color: #52755c;
 }
@@ -88,7 +84,6 @@ p.lead {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
 #sideNav .navbar-toggler:focus {
   outline-color: #759e81;
 }
@@ -148,13 +143,11 @@ p.lead {
     display: block;
   }
 }
-
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
-
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -167,14 +160,12 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
-
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
-
 .bg-primary {
   background-color: #52755c !important;
 }
@@ -186,7 +177,6 @@ section.resume-section .resume-item .resume-date {
 a {
   color: #52755c;
 }
-
 a:hover, a:focus, a:active {
   color: #324839;
 }
@@ -196,7 +186,6 @@ a:hover, a:focus, a:active {
   border-color: #ffc107;
   color: #343a40;
 }
-
 .btn-info:hover, .btn-info:active {
   background-color: #ba8b00;
   border-color: #ba8b00;
@@ -207,9 +196,8 @@ a:hover, a:focus, a:active {
   color: rgba(255, 255, 255, 0.9);
   position: relative;
 }
-
 .navbar-dark .navbar-nav .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 25%;
@@ -219,30 +207,24 @@ a:hover, a:focus, a:active {
   z-index: -1;
   margin: 0 auto;
   background-color: #759e81;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-
 .navbar-dark .navbar-nav .nav-link.show::after, .navbar-dark .navbar-nav .nav-link.active::after {
   width: 50%;
 }
-
 .navbar-dark .navbar-nav.disabled {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .navbar-dark .navbar-text a {
   color: #fff;
 }
-
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
@@ -256,7 +238,6 @@ a:hover, a:focus, a:active {
     width: 125px;
   }
 }
-
 .item-preview-img {
   position: relative;
 }
@@ -273,46 +254,38 @@ a:hover, a:focus, a:active {
   height: 100%;
   top: 0;
   left: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
-
 .item-preview-overlay:hover, .item-preview-overlay:focus, .item-preview-overlay:active {
   opacity: 1;
   color: transparent;
 }
-
 .item-preview-overlay:hover .btn-preview:after, .item-preview-overlay:focus .btn-preview:after, .item-preview-overlay:active .btn-preview:after {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   width: 100%;
 }
-
 .item-preview-overlay p, .item-preview-overlay .dev-icons {
   color: #fff;
 }
-
 .item-preview-overlay p {
   border: none;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
-
 .item-preview-overlay .dev-icons {
   line-height: 1;
 }
-
 .item-preview-overlay .dev-icons .list-inline-item i {
   color: #fff;
 }
-
 .item-preview-overlay .dev-icons .list-inline-item a:hover .fa-github::before {
   color: #e83e8c;
 }
-
 .item-preview-overlay .btn-preview {
   position: relative;
   font-size: 1.8rem;
@@ -324,9 +297,8 @@ a:hover, a:focus, a:active {
   z-index: 1;
   text-decoration: none;
 }
-
 .item-preview-overlay .btn-preview:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 25%;
@@ -348,7 +320,6 @@ a:hover, a:focus, a:active {
     transform: translateY(-100%);
   }
 }
-
 @-webkit-keyframes sprite {
   0% {
     -webkit-transform: translateY(0);
@@ -357,19 +328,16 @@ a:hover, a:focus, a:active {
     -webkit-transform: translateY(-100%);
   }
 }
-
 [data-sprite] {
   position: relative;
   overflow: hidden;
 }
-
 [data-sprite] img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-
 [data-sprite].anim-loaded img {
   -webkit-animation-name: sprite;
   animation-name: sprite;
@@ -378,7 +346,6 @@ a:hover, a:focus, a:active {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
-
 [data-sprite].anim-loaded.anim-play img {
   -webkit-animation-play-state: running;
   animation-play-state: running;
