@@ -620,7 +620,6 @@
 	function executeLazyFunction(element) {
 	  var lazyFunctionName = element.getAttribute("data-lazy-function");
 	  var lazyFunction = window.lazyFunctions[lazyFunctionName];
-	  console.log(lazyFunction)
 	  if (!lazyFunction) return;
 	  lazyFunction(element);
 	}
