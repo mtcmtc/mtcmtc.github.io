@@ -52,6 +52,7 @@ function clean() {
 function modules() {
   // Bootstrap
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/**/*.js')
+    .pipe(uglify())
     .pipe(gulp.dest('./vendor/bootstrap'));
   var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/**/*.css')
     .pipe(postcss())
