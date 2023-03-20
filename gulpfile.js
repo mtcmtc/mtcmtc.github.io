@@ -4,6 +4,7 @@
 const autoprefixer = require("gulp-autoprefixer");
 const browsersync = require("browser-sync").create();
 const cleanCSS = require("gulp-clean-css");
+const postcss = require('gulp-postcss');
 const del = require("del");
 const gulp = require("gulp");
 const header = require("gulp-header");
@@ -50,10 +51,14 @@ function clean() {
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
   // Bootstrap
-  var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
+  var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/**/*.js')
+    .pipe(gulp.dest('./vendor/bootstrap'));
+  var bootstrapCSS = gulp.src('./node_modules/bootstrap/dist/**/*.css')
+    .pipe(postcss())
     .pipe(gulp.dest('./vendor/bootstrap'));
   // Font Awesome CSS
   var fontAwesomeCSS = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/**/*')
+    .pipe(postcss())
     .pipe(gulp.dest('./vendor/fontawesome-free/css'));
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
@@ -67,7 +72,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
+  return merge(bootstrapJS, bootstrapCSS, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
 }
 
 // CSS task

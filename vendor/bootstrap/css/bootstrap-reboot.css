@@ -33,10 +33,6 @@ body {
   background-color: #fff;
 }
 
-[tabindex="-1"]:focus {
-  outline: 0 !important;
-}
-
 hr {
   box-sizing: content-box;
   height: 0;
@@ -53,8 +49,7 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-original-title] {
+abbr[title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -259,9 +254,7 @@ input[type="checkbox"] {
 }
 
 input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
+input[type="time"] {
   -webkit-appearance: listbox;
 }
 
@@ -328,4 +321,3 @@ template {
 [hidden] {
   display: none !important;
 }
-/*# sourceMappingURL=bootstrap-reboot.css.map */
